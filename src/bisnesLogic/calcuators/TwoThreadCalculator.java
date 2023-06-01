@@ -15,7 +15,7 @@ public class TwoThreadCalculator implements CalculatorStrategy {
         evenThread.start();
         oddThread.start();
 
-        try {  // IS IT CORRECT AND CAN IT CAUSE 'PEREZDACHA'
+        try { 
             oddThread.join();
             evenThread.join();
         } catch (InterruptedException e) {
